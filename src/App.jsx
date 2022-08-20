@@ -32,8 +32,9 @@ function App() {
   };
 
   return (
-    <div>
+    <div className={modal ? 'fijar' : null}>
       <Header
+        gastos={gastos}
         presupuesto={presupuesto}
         setPresupuesto={setPresupuesto}
         isValidPresupuesto={isValidPresupuesto}
